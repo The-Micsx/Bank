@@ -113,7 +113,6 @@ FOREIGN KEY (actionsID) REFERENCES portfolio(actionsID)
 
 CREATE TABLE history_of_operations(
 history_of_operationsID SERIAL PRIMARY KEY,
-transferID INT UNIQUE,
 receivingID INT UNIQUE,
 expensesID INT UNIQUE, 
 FOREIGN KEY (history_of_operationsID) REFERENCES transfer(history_of_operationsID)
