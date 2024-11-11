@@ -21,7 +21,7 @@ builder.Services.AddScoped<ICardTypeRepository, CardTypeRepository>();
 builder.Services.AddScoped<ICardRepository, CardRepository>();
 builder.Services.AddScoped<IExchangeRateRepository, ExchangeRateRepository>();
 builder.Services.AddScoped<IHomeAdreRepository, HomeAdreRepository>();
-
+builder.Services.AddScoped<ITransactionHistoryRepository, TransactionHistoryRepository>();
 
 var app = builder.Build();
 
