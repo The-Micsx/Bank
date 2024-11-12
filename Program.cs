@@ -23,7 +23,8 @@ builder.Services.AddScoped<IExchangeRateRepository, ExchangeRateRepository>();
 builder.Services.AddScoped<IHomeAdreRepository, HomeAdreRepository>();
 builder.Services.AddScoped<ITransactionHistoryRepository, TransactionHistoryRepository>();
 builder.Services.AddScoped<ITransactionTypeRepository, TransactionTypeRepository>();
-
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserRoleRepository, UserRoleRepository>();
 
 var app = builder.Build();
 
